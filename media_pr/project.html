@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project.css">
+    <script type="importmap">
+      {
+        "imports":{
+          "three":"../build/three.module.js"
+        }
+      }
+    </script>  
+    <script type="module" src="project.js" defer></script>
+  
+  </head>
+  <body>
+    <div id="webgl-container"></div>
+    <div class="button-box">
+      <label class="label">Fish count
+        <input type="range" class="slide" min="1" max="100" value="100">
+        <input type="text" class="txtbox" value="100" readonly="readonly">
+      </label>
+      <label class="label">Speed ratio
+        <input type="range" class="slide" min="0.5" max="5" value="1" step="0.1">
+        <input type="text" class="txtbox" value="1" readonly="readonly">
+      </label>
+      <label class="label">Light power
+        <input type="range" class="slide" min="1" max="500" value="1" step="1">
+        <input type="text" class="txtbox" value="1" readonly="readonly">
+      </label>
+      <label class="label">Visible squid
+        <input type="checkbox" id="onSquid" >
+      </label>
+      <label class="label">Visible background
+        <input type="checkbox" id="onBackground" >
+      </label>
+      <label class="label">Visible mirror
+        <input type="checkbox" id="onMirror" >
+      </label>
+  </div>
+  </body>
+</html>
