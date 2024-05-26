@@ -308,7 +308,7 @@ class Fish {
     object.rotation.y = 3.14;
     object.rotation.x = 3.14/2;
 
-    this._speed = THREE.MathUtils.randFloat(0.001, 0.03);
+    this._speed = THREE.MathUtils.randFloat(0.0005, 0.003);
     this._speedOrigin = this._speed;
 
     const origin = new THREE.Object3D();
@@ -340,7 +340,7 @@ class Squid {
     origin.rotateX(-3.14/6);
     origin.visible = false;
     
-    this._rotate = 0.005;
+    this._rotate = 0.001;
     this._squid = origin;
   }
 }
